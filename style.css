@@ -1,0 +1,145 @@
+/* Reset básico de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  transition: color 0.2s;
+}
+
+.header nav a:hover {
+  color: #ffffff;
+}
+
+/* Container de Conteúdo */
+.container {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+/* Cartão */
+.card {
+  background-color: #ffffff;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 350px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.badge {
+  background-color: #e0e7ff;
+  color: #4338ca;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.card h2 {
+  color: #1e293b;
+  margin: 12px 0;
+  font-size: 1.4rem;
+}
+
+.card p {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Formulário */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #475569;
+}
+
+.form-group input {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #4f46e5;
+}
+
+/* Botão principal */
+.btn-primary {
+  background-color: #4f46e5;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* Rodapé */
+.footer {
+  background-color: #0f172a;
+  color: #94a3b8;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
