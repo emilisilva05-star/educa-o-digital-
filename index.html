@@ -68,22 +68,29 @@
             margin-bottom: 2.5rem;
         }
 
+        /* Estilo atualizado dos Cards como links */
         .card {
             background: #ffffff;
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none; /* Remove o sublinhado do link */
+            color: inherit; /* Mantém as cores do texto */
+            display: block; /* Garante o comportamento de bloco */
+            cursor: pointer;
         }
 
         .card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
         }
 
         .card img {
             width: 100%;
             height: 200px;
             object-fit: cover;
+            display: block;
         }
 
         .card-content {
@@ -93,39 +100,11 @@
         .card-content h3 {
             color: #1b4332;
             margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
         }
 
-        /* Seção de Navegação (Botão para outra página) */
-        .navigation-section {
-            text-align: center;
-            background: #d8f3dc;
-            padding: 3rem 1rem;
-            border-radius: 12px;
-            border: 1px solid #b7e4c7;
-        }
-
-        .navigation-section h3 {
-            color: #1b4332;
-            margin-bottom: 1rem;
-        }
-
-        /* Botão para ir para outra página */
-        .btn-pagina {
-            display: inline-block;
-            background-color: #2d6a4f;
-            color: #ffffff;
-            padding: 0.8rem 2rem;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 25px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .btn-pagina:hover {
-            background-color: #52b788;
-            color: #1b4332;
-            transform: scale(1.05);
+        .card:hover .card-content h3 {
+            color: #52b788; /* Muda a cor do título ao passar o mouse */
         }
 
         /* Rodapé */
@@ -153,37 +132,30 @@
         </section>
 
         <div class="cards-grid">
-            <div class="card">
+            <a href="tecnologia.html" class="card">
                 <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&q=80" alt="Plantação verde ao pôr do sol">
                 <div class="card-content">
                     <h3>Tecnologia no Campo</h3>
                     <p>Utilização de sistemas inteligentes para otimizar o cultivo e a colheita.</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="card">
+            <a href="maquinario.html" class="card">
                 <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=600&q=80" alt="Maquinário agrícola no campo">
                 <div class="card-content">
                     <h3>Maquinário Moderno</h3>
                     <p>Equipamentos de alta precisão que aumentam a eficiência da produção.</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="card">
+            <a href="sustentabilidade.html" class="card">
                 <img src="https://images.unsplash.com/photo-1530507629858-e4977d30e9e0?auto=format&fit=crop&w=600&q=80" alt="Sustentabilidade e natureza">
                 <div class="card-content">
                     <h3>Sustentabilidade</h3>
                     <p>Práticas alinhadas à preservação dos recursos naturais e do solo.</p>
                 </div>
-            </div>
+            </a>
         </div>
-
-        <section class="navigation-section">
-            <h3>Quer saber mais sobre nossas soluções?</h3>
-            <p style="margin-bottom: 1.5rem;">Acesse nossa página detalhada de serviços e produtos.</p>
-            
-            <a href="outra-pagina.html" class="btn-pagina">Ir para a Próxima Página &rarr;</a>
-        </section>
     </div>
 
     <footer>
