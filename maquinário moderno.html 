@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agrotecnologia - O Futuro do Campo</title>
+  <title>Maquinário Agrícola Moderno</title>
   <style>
-    /* Reset de margens e padding */
+    /* Reset Básico */
     * {
       margin: 0;
       padding: 0;
@@ -13,9 +13,9 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    /* Corpo centralizado */
+    /* Centralização Global */
     body {
-      background-color: #0d1712;
+      background-color: #0a110d;
       color: #ecfdf5;
       min-height: 100vh;
       display: flex;
@@ -25,7 +25,7 @@
       line-height: 1.6;
     }
 
-    /* Cabeçalho centralizado */
+    /* Cabeçalho Centralizado */
     header {
       width: 100%;
       max-width: 1100px;
@@ -45,7 +45,7 @@
       font-size: 1.1rem;
     }
 
-    /* Navegação */
+    /* Menu de Navegação */
     nav ul {
       display: flex;
       justify-content: center;
@@ -65,7 +65,7 @@
       color: #10b981;
     }
 
-    /* Conteúdo principal centralizado */
+    /* Container Principal Centralizado */
     main {
       width: 100%;
       max-width: 1100px;
@@ -76,7 +76,7 @@
       gap: 3rem;
     }
 
-    /* Card Destaque (Hero) */
+    /* Banner Principal (Destaque) */
     .hero {
       width: 100%;
       background-color: #13271d;
@@ -110,7 +110,7 @@
       margin: 0 auto;
     }
 
-    /* Grid de Cards */
+    /* Grade de Maquinários Centralizada */
     .cards-grid {
       width: 100%;
       display: grid;
@@ -160,7 +160,7 @@
       color: #a7f3d0;
     }
 
-    /* Rodapé centralizado */
+    /* Rodapé Centralizado */
     footer {
       width: 100%;
       max-width: 1100px;
@@ -176,12 +176,12 @@
 
   <!-- Cabeçalho -->
   <header>
-    <h1>AgroTech Digital</h1>
-    <p>Inovação, sustentabilidade e alta produtividade no campo</p>
+    <h1>Maquinário Moderno</h1>
+    <p>Tecnologia de ponta, automação e eficiência no campo</p>
     <nav>
       <ul>
         <li><a href="#inicio">Início</a></li>
-        <li><a href="#solucoes">Soluções</a></li>
+        <li><a href="#maquinas">Maquinários</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
@@ -190,39 +190,39 @@
   <!-- Conteúdo Principal -->
   <main id="inicio">
 
-    <!-- Card Principal de Destaque -->
+    <!-- Destaque Principal -->
     <section class="hero">
-      <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=1200&q=80" alt="Trator com tecnologia autônoma no campo">
+      <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=1200&q=80" alt="Trator autônomo com inteligência artificial">
       <div class="hero-content">
-        <h2>Agricultura de Precisão e Automação</h2>
-        <p>O uso de máquinas autônomas, sensores IoT e análise de dados em tempo real está otimizando o cultivo e reduzindo o impacto ambiental na produção agrícola.</p>
+        <h2>Tratores Autônomos e Inteligentes</h2>
+        <p>Equipados com GPS de alta precisão, inteligência artificial e sensores inteligentes, os novos tratores operam sem necessidade de motorista, otimizando o consumo de combustível e reduzindo falhas no plantio.</p>
       </div>
     </section>
 
-    <!-- Grid de Cards de Agrotecnologia -->
-    <section class="cards-grid" id="solucoes">
+    <!-- Cards com Ideias de Maquinários Modernos -->
+    <section class="cards-grid" id="maquinas">
 
       <article class="card">
-        <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=600&q=80" alt="Drone de monitoramento agrícola">
+        <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=600&q=80" alt="Drone para pulverização de precisão">
         <div class="card-body">
-          <h3>Drones e Mapeamento Aéreo</h3>
-          <p>Monitoramento de lavouras em tempo real com imagens multiespectrais para identificação de pragas e estresse hídrico.</p>
+          <h3>Drones Pulverizadores</h3>
+          <p>Aplicação localizada de insumos e defensivos agrícolas com margem de erro milimétrica, evitando desperdícios e protegendo o solo.</p>
         </div>
       </article>
 
       <article class="card">
-        <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=600&q=80" alt="Sensores para gestão de solo e irrigação">
+        <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=600&q=80" alt="Colheitadeira moderna com sensores integrados">
         <div class="card-body">
-          <h3>Irrigação Inteligente e IoT</h3>
-          <p>Sensores instalados no solo medem a umidade e os nutrientes para acionar sistemas automatizados de irrigação sustentável.</p>
+          <h3>Colheitadeiras Conectadas</h3>
+          <p>Sistemas de telemetria analisam a umidade dos grãos e a produtividade da terra em tempo real enquanto realizam a colheita.</p>
         </div>
       </article>
 
       <article class="card">
-        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=600&q=80" alt="Fazenda vertical urbana">
+        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=600&q=80" alt="Robô autônomo para remoção de ervas daninhas">
         <div class="card-body">
-          <h3>Fazendas Verticais</h3>
-          <p>Cultivo em ambientes controlados com iluminação LED especial e hidroponia para maximizar a produção no espaço urbano.</p>
+          <h3>Robôs Agrícolas de Capina</h3>
+          <p>Equipamentos autônomos que utilizam visão computacional para identificar e eliminar ervas daninhas sem o uso de produtos químicos.</p>
         </div>
       </article>
 
@@ -232,22 +232,8 @@
 
   <!-- Rodapé -->
   <footer>
-    <p>&copy; 2026 AgroTech Digital. Todos os direitos reservado
+    <p>&copy; 2026 Maquinário Moderno. Todos os direitos reservados.</p>
+  </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
+</body>
+</html>
