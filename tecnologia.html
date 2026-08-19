@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portal Tecnologia</title>
+  <title>Agrotecnologia - O Futuro do Campo</title>
   <style>
-    /* Reset básico */
+    /* Reset de margens e padding */
     * {
       margin: 0;
       padding: 0;
@@ -14,10 +13,10 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    /* Estilização do corpo com alinhamento e centralização verticais/horizontais */
+    /* Corpo centralizado */
     body {
-      background-color: #0f172a;
-      color: #f8fafc;
+      background-color: #0d1712;
+      color: #ecfdf5;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -32,17 +31,17 @@
       max-width: 1100px;
       padding: 2.5rem 1rem 1.5rem;
       text-align: center;
-      border-bottom: 1px solid #1e293b;
+      border-bottom: 1px solid #1f3a2b;
     }
 
     header h1 {
       font-size: 2.5rem;
-      color: #38bdf8;
+      color: #10b981;
       margin-bottom: 0.5rem;
     }
 
     header p {
-      color: #94a3b8;
+      color: #a7f3d0;
       font-size: 1.1rem;
     }
 
@@ -56,14 +55,14 @@
     }
 
     nav a {
-      color: #e2e8f0;
+      color: #d1fae5;
       text-decoration: none;
       font-weight: 600;
       transition: color 0.2s ease;
     }
 
     nav a:hover {
-      color: #38bdf8;
+      color: #10b981;
     }
 
     /* Conteúdo principal centralizado */
@@ -77,20 +76,20 @@
       gap: 3rem;
     }
 
-    /* Banner / Hero Principal */
+    /* Card Destaque (Hero) */
     .hero {
       width: 100%;
-      background-color: #1e293b;
+      background-color: #13271d;
       border-radius: 16px;
       overflow: hidden;
-      border: 1px solid #334155;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      border: 1px solid #1f3a2b;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
       text-align: center;
     }
 
     .hero img {
       width: 100%;
-      height: 350px;
+      height: 380px;
       object-fit: cover;
       display: block;
     }
@@ -101,17 +100,17 @@
 
     .hero-content h2 {
       font-size: 1.8rem;
-      color: #f1f5f9;
+      color: #34d399;
       margin-bottom: 0.75rem;
     }
 
     .hero-content p {
-      color: #94a3b8;
+      color: #a7f3d0;
       max-width: 750px;
       margin: 0 auto;
     }
 
-    /* Grade de Artigos Centralizada e Alinhada */
+    /* Grid de Cards */
     .cards-grid {
       width: 100%;
       display: grid;
@@ -121,8 +120,8 @@
     }
 
     .card {
-      background-color: #1e293b;
-      border: 1px solid #334155;
+      background-color: #13271d;
+      border: 1px solid #1f3a2b;
       border-radius: 12px;
       overflow: hidden;
       display: flex;
@@ -134,7 +133,7 @@
 
     .card:hover {
       transform: translateY(-6px);
-      border-color: #38bdf8;
+      border-color: #10b981;
     }
 
     .card img {
@@ -153,12 +152,12 @@
 
     .card-body h3 {
       font-size: 1.25rem;
-      color: #f1f5f9;
+      color: #34d399;
     }
 
     .card-body p {
       font-size: 0.95rem;
-      color: #94a3b8;
+      color: #a7f3d0;
     }
 
     /* Rodapé centralizado */
@@ -167,8 +166,8 @@
       max-width: 1100px;
       padding: 2rem 1rem;
       text-align: center;
-      border-top: 1px solid #1e293b;
-      color: #64748b;
+      border-top: 1px solid #1f3a2b;
+      color: #059669;
       font-size: 0.9rem;
     }
   </style>
@@ -177,12 +176,12 @@
 
   <!-- Cabeçalho -->
   <header>
-    <h1>Universo Tech</h1>
-    <p>Inovação, futuro e transformação digital em um só lugar</p>
+    <h1>AgroTech Digital</h1>
+    <p>Inovação, sustentabilidade e alta produtividade no campo</p>
     <nav>
       <ul>
         <li><a href="#inicio">Início</a></li>
-        <li><a href="#destaques">Destaques</a></li>
+        <li><a href="#solucoes">Soluções</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
@@ -191,39 +190,39 @@
   <!-- Conteúdo Principal -->
   <main id="inicio">
 
-    <!-- Card Principal / Destaque -->
+    <!-- Card Principal de Destaque -->
     <section class="hero">
-      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="Processador de tecnologia">
+      <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=1200&q=80" alt="Trator com tecnologia autônoma no campo">
       <div class="hero-content">
-        <h2>A Revolução dos Processadores Quânticos</h2>
-        <p>Acompanhe os mais recentes desenvolvimentos na arquitetura de hardware que prometem mudar o rumo do processamento de dados global.</p>
+        <h2>Agricultura de Precisão e Automação</h2>
+        <p>O uso de máquinas autônomas, sensores IoT e análise de dados em tempo real está otimizando o cultivo e reduzindo o impacto ambiental na produção agrícola.</p>
       </div>
     </section>
 
-    <!-- Grid de Notícias / Artigos -->
-    <section class="cards-grid" id="destaques">
+    <!-- Grid de Cards de Agrotecnologia -->
+    <section class="cards-grid" id="solucoes">
 
       <article class="card">
-        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="Inteligência Artificial">
+        <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=600&q=80" alt="Drone de monitoramento agrícola">
         <div class="card-body">
-          <h3>Inteligência Artificial</h3>
-          <p>Modelos avançados e o impacto do aprendizado de máquina na automação do mercado de trabalho.</p>
+          <h3>Drones e Mapeamento Aéreo</h3>
+          <p>Monitoramento de lavouras em tempo real com imagens multiespectrais para identificação de pragas e estresse hídrico.</p>
         </div>
       </article>
 
       <article class="card">
-        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Segurança Digital">
+        <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=600&q=80" alt="Sensores para gestão de solo e irrigação">
         <div class="card-body">
-          <h3>Cibersegurança</h3>
-          <p>Estratégias de proteção Zero Trust para manter dados e infraestruturas seguras na nuvem.</p>
+          <h3>Irrigação Inteligente e IoT</h3>
+          <p>Sensores instalados no solo medem a umidade e os nutrientes para acionar sistemas automatizados de irrigação sustentável.</p>
         </div>
       </article>
 
       <article class="card">
-        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80" alt="Conectividade Global">
+        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=600&q=80" alt="Fazenda vertical urbana">
         <div class="card-body">
-          <h3>Conectividade Global</h3>
-          <p>A expansão de redes de alta velocidade e satélites em órbita baixa para integração total.</p>
+          <h3>Fazendas Verticais</h3>
+          <p>Cultivo em ambientes controlados com iluminação LED especial e hidroponia para maximizar a produção no espaço urbano.</p>
         </div>
       </article>
 
@@ -233,7 +232,7 @@
 
   <!-- Rodapé -->
   <footer>
-    <p>&copy; 2026 Universo Tech. Todos os direitos reservados.</p>
+    <p>&copy; 2026 AgroTech Digital. Todos os direitos reservados.</p>
   </footer>
 
 </body>
