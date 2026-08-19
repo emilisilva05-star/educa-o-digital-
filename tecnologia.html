@@ -1,71 +1,189 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte - Tecnologia no Campo</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Tecnologia</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #0f172a;
+      color: #fff;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* Conteúdo Principal */
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      color: white;
+      padding: 3rem 2rem;
+      border-radius: 12px;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .hero p {
+      color: #94a3b8;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Seção de Cards (Grid) */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      color: #0f172a;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: #64748b;
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .card a {
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Rodapé */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #0f172a;
+      color: #94a3b8;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>AGRO FORTE</h1>
-        <p>Inovação Digital e Conectividade Transformando o Agronegócio</p>
-    </header>
+  <header>
+    <h1>Tecnologia</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#artigos">Artigos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="container">
-        <a href="index.html" class="btn-voltar">&larr; Voltar para a Página Inicial</a>
+  <main>
+    <section class="hero" id="inicio">
+      <h2>O Futuro da Tecnologia</h2>
+      <p>Acompanhe as principais inovações sobre inteligência artificial, desenvolvimento de software e transformação digital.</p>
+    </section>
 
-        <section class="intro">
-            <h2>A Era da Agricultura 4.0 na Sociedade</h2>
-            <p>A transformação digital chegou com força total ao agronegócio. Com o uso de inteligência artificial, dados em tempo real e conectividade, o campo se tornou uma verdadeira indústria de alta precisão que gera valor para toda a população.</p>
-        </section>
+    <section class="cards-grid" id="artigos">
+      <article class="card">
+        <div>
+          <h3>Inteligência Artificial</h3>
+          <p>Descubra como os modelos de aprendizado de máquina estão redefinindo a produtividade global.</p>
+        </div>
+        <a href="#">Ler mais &rarr;</a>
+      </article>
 
-        <section class="secao-alinhada">
+      <article class="card">
+        <div>
+          <h3>Desenvolvimento Web</h3>
+          <p>Explorando arquiteturas modernas, frameworks rápidos e boas práticas de acessibilidade.</p>
+        </div>
+        <a href="#">Ler mais &rarr;</a>
+      </article>
 
-            <article class="linha-conteudo">
-                <div class="imagem-box">
-                    <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=600&q=80" alt="Drone sobrevoando área agrícola">
-                </div>
-                <div class="texto-box">
-                    <h3>1. Monitoramento com Drones e Satélites</h3>
-                    <p><strong>Impacto Social:</strong> Imagens de altíssima resolução capturadas por drones e satélites identificam pragas, falhas no plantio e falta de nutrientes no solo em estágios iniciais. Isso permite agir rápido, garantindo safras mais saudáveis e evitando o desperdício de recursos.</p>
-                </div>
-            </article>
+      <article class="card">
+        <div>
+          <h3>Cibersegurança</h3>
+          <p>Estratégias essenciais para proteger dados e infraestruturas em um mundo conectado.</p>
+        </div>
+        <a href="#">Ler mais &rarr;</a>
+      </article>
+    </section>
+  </main>
 
-            <article class="linha-conteudo reverso">
-                <div class="imagem-box">
-                    <img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=600&q=80" alt="Sensores de solo e IoT no campo">
-                </div>
-                <div class="texto-box">
-                    <h3>2. Sensores IoT e Internet das Coisas</h3>
-                    <p><strong>Impacto Social:</strong> Sensores instalados no solo medem a umidade, a temperatura e a acidez em tempo real. As informações são enviadas diretamente para os celulares dos produtores, permitindo irrigar e adubar com precisão total, economizando água e energia.</p>
-                </div>
-            </article>
+  <footer>
+    <p>&copy; 2026 Portal Tecnologia. Todos os direitos reservados.</p>
+  </footer>
 
-            <article class="linha-conteudo">
-                <div class="imagem-box">
-                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&q=80" alt="Software de gestão agrícola no tablet">
-                </div>
-                <div class="texto-box">
-                    <h3>3. Big Data e Software de Gestão Agrícola</h3>
-                    <p><strong>Impacto Social:</strong> Softwares inteligentes cruzam dados do clima, histórico de colheitas e valores do mercado para ajudar no planejamento da fazenda. A tomada de decisões baseada em dados reduz os custos de produção e ajuda a manter a oferta de alimentos constante e segura.</p>
-                </div>
-            </article>
-
-            <article class="linha-conteudo reverso">
-                <div class="imagem-box">
-                    <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=600&q=80" alt="Biotecnologia e pesquisas científicas no campo">
-                </div>
-                <div class="texto-box">
-                    <h3>4. Biotecnologia e Genética Vegetal</h3>
-                    <p><strong>Impacto Social:</strong> O desenvolvimento de sementes mais resistentes à seca, pragas e variações climáticas garante a produção de grãos mesmo em períodos difíceis. Isso protege a economia e evita que secas locais causem escassez de alimentos para as cidades.</p>
-                </div>
-            </article>
-
-            <article class="linha-conteudo">
-                <div class="imagem-box">
-                    <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=600&q=80" alt="Rastreabilidade de alimentos por QR Code">
-                </div>
-                <div class="texto-box">
-                    <h3>5. Rastreabilidade de Alimentos do
+</body>
+</html>
